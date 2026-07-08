@@ -1,0 +1,314 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sora:wght@100..800&display=swap');
+
+
+  /* Width/Height of the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;      /* Vertical scrollbar */
+    height: 10px;     /* Horizontal scrollbar */
+}
+
+/* Background (track) */
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/* Scrollbar itself (thumb) */
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+/* When hovering over the scrollbar */
+::-webkit-scrollbar-thumb:hover {
+    background: #d9d9d9;
+}
+
+
+.head{
+  font-family: var(--head)
+  
+}
+.subHead{
+  font-family: var(--sub-head);
+  
+}
+:root {
+  --marginIdeal: 6rem 4rem;
+  --head:"Sora", sans-serif;
+  --sub-head:"Inter", sans-serif;
+  --mainColor:#C7FF2F;
+  --secondaryGray : #666666;
+  --boxes : #66666640;
+
+}
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  box-sizing: border-box;
+}
+
+
+
+button{
+  cursor: pointer;
+}
+
+
+body{
+  font-family:var(--sub-head);
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+
+/* header  */
+
+.navBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7 1.5rem;
+  /* top: 0; */
+  /* z-index: 1000; */
+  background-color: black;
+  position:static;
+}
+
+.navBar img{
+  height: 5rem;
+  width: auto;
+}
+
+.navBar .navs{
+  margin-right: 14rem;
+  display: flex;
+  gap: 2rem;
+}
+
+
+.navBar button{
+  background-color: black;
+  color: white;
+  font-family: var(--sub-head);
+  height:3rem;
+  font-size: 1rem;
+  width: auto;
+}
+
+ 
+
+/* second  */
+.second {
+  margin: 6rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  
+}
+
+.second .head{
+  font-weight: 800;
+  color: #C7FF2F;
+  font-size: 2rem;
+}
+
+.second .subHead{
+  font-size: 1.4rem;
+}
+
+.second .searchInput{
+  display: flex;
+  gap: 1rem;
+}
+
+.second .searchInput input{
+  flex: 0.9 0.9 0;
+  height: 2rem;
+  background-color: var(--boxes);
+  border: solid var(--secondaryGray) 0.1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+.second .searchInput button{
+  flex: 0.1 0.1 0;
+  height: 2rem;
+  background-color: var(--boxes);
+  border: solid var(--secondaryGray) 0.1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: white;
+
+}
+
+/* third  */
+.trending {
+    margin: var(--marginIdeal);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  
+}
+
+.trending .first{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.trending .first .head{
+  font-size: 2rem;
+  font-weight: 700;
+  
+ 
+}
+.trending .first .subHead{
+  font-size: 1.3rem;
+  color: #666666; 
+}
+
+
+.trending .main {
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  gap: 2rem;
+  flex-shrink: 0;
+}
+
+.trending .main .cards button {  
+  border-radius: rem;
+  background-color: black;
+
+
+
+}
+
+button img {
+  border-radius: 0.2rem;
+  display: block;
+  height:20rem;
+  width: auto;
+  
+}
+ .rate {
+  position:relative;
+  top :-2rem;
+  left:9rem;
+  font-family: var(--sub-head);
+  color:#9ec72d
+
+  }
+
+
+
+  /* fourth */
+
+  .loadMore {
+    display: flex;
+    justify-content: center;
+  }
+
+  .loadMore button {
+    color: white;
+    background-color: black;
+  }
+
+    .loadMore button:hover {
+    color: rgb(0, 106, 228);
+  
+  }
+  .snd{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .snd button{
+    font-size: 2rem;
+    background-color: #C7FF2F;
+    width: 3rem;
+    height: 3rem;
+    border: solid var(--boxes);
+    border-radius: 1rem;
+  }
+  select {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: solid rgb(49, 49, 49) 0.1rem;
+  }
+  .Discover {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    margin: var(--marginIdeal);
+  }
+
+   .Discover .first{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   }
+   .Discover .first>p  {
+    font-family: var(--head);
+    font-size: 2rem;
+    font-weight: 800;
+
+  }
+  .Discover .first .selects{
+    display: flex;
+    gap: 2rem;
+  }
+
+  .Discover .moviesCards{
+    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+
+.Discover .moviesCards button{
+ 
+      background-color: black;
+  }
+  
+
+  /* fifth */
+.recents {
+  margin: var(--marginIdeal);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.recents .first .head {
+  font-family: var(--head);
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+
+
+.recents .moviesCards{
+  display: flex;
+  gap: 2rem;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+.recents .moviesCards button{
+  background-color: black;
+}
+
